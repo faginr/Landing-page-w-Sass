@@ -1,0 +1,22 @@
+{
+  "name": "landing-page-w-sass",
+  "version": "1.0.0",
+  "description": "Building a landing page using Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faginr/Landing-page-w-Sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faginr/Landing-page-w-Sass/issues"
+  },
+  "homepage": "https://github.com/faginr/Landing-page-w-Sass#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
