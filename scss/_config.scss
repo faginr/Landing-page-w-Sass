@@ -1,0 +1,31 @@
+$primary-color: #eee;
+$seconday-color: rgb(65, 123, 231);
+$show-home-image: true;
+$home-image: url(/assets/paintcode-bw.png) no-repeat;
+$background-opacity: .6;
+
+@mixin easeOut {
+    transition: all 0.3s ease-out;
+}
+
+@mixin background{
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba(white, $background-opacity);
+            }
+        }
+    }
+}
