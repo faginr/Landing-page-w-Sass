@@ -1,5 +1,5 @@
 $primary-color: #eee;
-$seconday-color: rgb(65, 123, 231);
+$seconday-color: rgb(45, 105, 218);
 $show-home-image: true;
 $home-image: url(/assets/paintcode-bw.png) no-repeat;
 $background-opacity: .6;
@@ -24,7 +24,7 @@ $background-opacity: .6;
                 width: 100%;
                 height: 100%;
                 z-index: -1;
-                background: rgba(white, $background-opacity);
+                background: rgba(rgb(245, 255, 247), $background-opacity);
             }
         }
     }
