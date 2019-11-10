@@ -95,18 +95,30 @@
   }
 
   .nav-item {
-      transform: translate3d(0, -600px, 0);
+      transform: translate3d(600px, 0, 0);
       @include easeOut;
 
       &.show {
           transform: translate3d(0, 0, 0);
       }
   }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    @include easeOut;
+  }
 }
 
 //Delay each nav-item slide animation by 0.1 seconds
-@for $i from 1 through 4{
-    .nav-item:nthchild(#{$i}){
-        transition-delay: $i * 1s;
+@for $i from 1 through 4 {
+    .nav-item:nth-child(#{$i}){
+        transition-delay: $i * .1s;
     }
 }
