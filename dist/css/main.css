@@ -24,11 +24,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: .8;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
-  .menu-branding, .menu-nav {
+  .menu-brand, .menu-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -37,6 +36,46 @@
     width: 50%;
     height: 100vh;
     overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(225, 225, 225, 0.8);
+    list-style: none;
+    transform: translate3d(100%, 0, 0);
+    transition: all 0.3s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-brand {
+    background: rgba(251, 251, 251, 0.8);
+    transform: translate3d(-100%, 0, 0);
+    transition: all 0.3s ease-out; }
+    .menu-brand.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-brand .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("/assets/rexface.jpg") no-repeat;
+      background-size: contain;
+      background-position: center;
+      border-radius: 50%;
+      border: solid 4px #2D69DA; }
+  .menu .nav-item {
+    transform: translate3d(0, -600px, 0);
+    transition: all 0.3s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+
+.nav-item:nthchild(1) {
+  transition-delay: 1s; }
+
+.nav-item:nthchild(2) {
+  transition-delay: 2s; }
+
+.nav-item:nthchild(3) {
+  transition-delay: 3s; }
+
+.nav-item:nthchild(4) {
+  transition-delay: 4s; }
 
 * {
   box-sizing: border-box; }
@@ -83,7 +122,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #2d69da; }
+  color: #2D69DA; }
 
 main {
   padding: 4rem;
@@ -93,7 +132,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #2d69da;
+        color: #2D69DA;
         transition: all 0.3s ease-out; }
   main#home {
     overflow: hidden; }
