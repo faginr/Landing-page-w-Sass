@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/faginr/Landing-page-w-Sass#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
